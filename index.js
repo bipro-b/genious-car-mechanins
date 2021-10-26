@@ -10,6 +10,7 @@ const port = 5000;
 
 // middleware
 app.use(cors());
+// Get data from client site
 app.use(express.json());
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.v2bif.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
